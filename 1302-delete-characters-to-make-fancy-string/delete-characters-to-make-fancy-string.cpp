@@ -1,14 +1,18 @@
 class Solution {
 public:
     string makeFancyString(string s) {
-        string result;
-        for (char c : s) {
-            int n = result.size();
-            if (n >= 2 && result[n - 1] == c && result[n - 2] == c) {
-                continue; // skip the current character
+        string str;
+       
+        for(int i=0; i<s.size(); i++){
+             int n=str.size();
+            if(n>=2 && str[n-1]==s[i] && str[n-2]==s[i]){
+                continue;
             }
-            result += c;
+           str+=s[i];
+
         }
-        return result;
+       
+        return str;
+        
     }
 };
