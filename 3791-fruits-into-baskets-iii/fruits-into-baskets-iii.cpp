@@ -1,50 +1,40 @@
 class Solution {
 public:
+    vector<int> st;
+    void build(vector<int>& baskets, int x, int lx, int rx){
+        if(rx - lx == 1){
+            st[x] = baskets[lx];
+            return;
+        }
+        int mid = (lx + rx) / 2;
+        build(baskets, 2*x+1, lx, mid);
+        build(baskets, 2*x+2, mid, rx);
+        st[x] = max(st[2*x+1], st[2*x+2]);
+    }
+    int find(int k, int x, int lx, int rx){
+        if(st[x] < k) return -1;
+        if(rx - lx == 1){
+            st[x] = -1;
+            return lx;
+        }
+        int mid = (lx + rx) / 2;
+        int ans;
+        if(st[2*x+1] >= k){
+            ans = find(k, 2*x+1, lx, mid);
+        } else {
+            ans = find(k, 2*x+2, mid, rx);
+        }
+        st[x] = max(st[2*x+1], st[2*x+2]);
+        return ans;
+    }
     int numOfUnplacedFruits(vector<int>& fruits, vector<int>& baskets) {
-        vector<int>sect_max;
-        int m=baskets.size();
-        int a=sqrt(m);
-        int cnt=0, mx=0;
-        for(int i=0; i<m; i++){
-            if(cnt==a){
-                sect_max.push_back(mx);
-                mx=baskets[i], cnt=1;
-            }else{
-                cnt++;
-                mx=max(mx,baskets[i]);
-            }
+        int n = fruits.size();
+        st.resize(4*n, 0);
+        build(baskets, 0, 0, n);
+        int ans = 0;
+        for(int fruit: fruits){
+            if(find(fruit, 0, 0, n) == -1) ans++;
         }
-        sect_max.push_back(mx);
-        int remain=0;
-        for(int i=0; i<fruits.size();i++){
-            int k=0, set=1;
-            for(int j=0; j<m; j+=a){
-                if(sect_max[k]<fruits[i]){
-                    k++;
-                    continue;
-                }
-                // find place to allocate
-                for(int r=j;r<min(j+a, m);r++){
-                    if(baskets[r] >= fruits[i]){
-                        set = 0;
-                        baskets[r] = 0;
-                        break;
-                    }
-                }
-                 // if fruit is allocated in a sector
-                if(set==0){
-                    sect_max[k] = 0; // find new mx
-                    // update new sector mx
-                    for(int r=j;r<min(j+a, m);r++){
-                        sect_max[k] = max(baskets[r], sect_max[k]);
-                    }
-                    break;
-            }
-            k++;
-
-        }
-        remain+=set;
-        }
-        return remain;
+        return ans;
     }
 };
