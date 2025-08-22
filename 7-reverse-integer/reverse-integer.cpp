@@ -1,19 +1,18 @@
-
 class Solution {
 public:
     int reverse(int x) {
-        long rev = 0; // Use long to handle potential overflow
-        while (x != 0) {
-            int digit = x % 10; // Get the last digit
-            rev = rev * 10 + digit; // Shift rev and append the digit
-            x /= 10; // Remove the last digit from x
-            
-            // Check for overflow/underflow
-            if (rev > INT_MAX || rev < INT_MIN) {
-                return 0; // Return 0 if overflow occurs
-            }
+        string st=to_string(x);
+        int n=st.size();
+        int s=0;
+        int e=n-1;
+        if (st[0] == '-') s = 1;
+        while(s<=e){
+            swap(st[s],st[e]);
+            s++;
+            e--;
         }
-        // return static_cast<int>(rev); // Return the reversed integer
-        return rev;
+        long long ans=stoll(st);
+        if (ans < INT_MIN || ans > INT_MAX) return 0;
+        return static_cast<int>(ans);
     }
 };
