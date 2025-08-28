@@ -22,7 +22,6 @@ void sortdia(int r,int c, vector<vector<int>>&grid, bool asc, int n){
         j++;
     }
 }
-
     vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
        int n=grid.size();
      for(int r=0;r<n;r++){
