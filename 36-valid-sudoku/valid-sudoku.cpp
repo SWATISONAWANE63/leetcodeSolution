@@ -1,50 +1,52 @@
 class Solution {
 public:
     bool isValidSudoku(vector<vector<char>>& board) {
-       
-        //for checking rows
-        for(int i=0; i<9;i++){
+        for(int i=0; i<9; i++){
             unordered_set<char>seen;
-            for(int j=0; j<9;j++){
+            for(int j=0; j<9; j++){
                 char val=board[i][j];
-                if(val!='.'){
+                if(val=='.'){
+                    continue;
+                }else if(val!='.'){
                     if(seen.count(val)){
                         return false;
                     }
                     seen.insert(val);
-                }            
+                }
             }
         }
-        //for checking col
         for(int j=0; j<9; j++){
             unordered_set<char>seen;
-            for(int i=0; i<9;i++){
-                char val =board[i][j];
-                if(val!='.'){
+            for(int i=0; i<9; i++){
+                char val=board[i][j];
+                if(val=='.'){
+                    continue;
+                }else if(val!='.'){
                     if(seen.count(val)){
                         return false;
                     }
                     seen.insert(val);
                 }
-            }
+            }   
         }
-        // for checking 3*3
-        for(int rowStart=0; rowStart<9; rowStart+=3){
-            for(int colStart=0; colStart<9; colStart+=3){
+        for(int r=0; r<9; r+=3){
+            for(int c=0; c<9; c+=3){
                 unordered_set<char>seen;
-                for(int i=rowStart; i<rowStart+3;i++){
-                    for(int j=colStart; j<colStart+3; j++){
+                for(int i=r; i<r+3; i++){
+                    for(int j=c; j<c+3; j++){
                         char val=board[i][j];
-                        if(val!='.'){
-                    if(seen.count(val)){
-                        return false;
-                    }
-                    seen.insert(val);
-                }
+                        if(val=='.'){
+                            continue;
+                        }else if( val!='.'){
+                            if(seen.count(val)){
+                                return false;
+                            }
+                            seen.insert(val);
+                        }
                     }
                 }
             }
         }
-        return true;
+         return true;
     }
 };
