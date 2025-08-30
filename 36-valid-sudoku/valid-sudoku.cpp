@@ -13,13 +13,12 @@ public:
                     }
                     seen.insert(val);
                 }            
-
             }
         }
         //for checking col
-        for(int j=0; j<n; j++){
+        for(int j=0; j<9; j++){
             unordered_set<char>seen;
-            for(int i=0; i<n;i++){
+            for(int i=0; i<9;i++){
                 char val =board[i][j];
                 if(val!='.'){
                     if(seen.count(val)){
