@@ -16,9 +16,9 @@ public:
             }
         }
         //for checking col
-        for(int j=0; j<9; j++){
+        for(int j=0; j<n; j++){
             unordered_set<char>seen;
-            for(int i=0; i<9;i++){
+            for(int i=0; i<n;i++){
                 char val =board[i][j];
                 if(val!='.'){
                     if(seen.count(val)){
