@@ -1,11 +1,11 @@
 class Solution {
 public:
     bool isValidSudoku(vector<vector<char>>& board) {
-        int n=board.size();
+       
         //for checking rows
-        for(int i=0; i<n;i++){
+        for(int i=0; i<9;i++){
             unordered_set<char>seen;
-            for(int j=0; j<n;j++){
+            for(int j=0; j<9;j++){
                 char val=board[i][j];
                 if(val!='.'){
                     if(seen.count(val)){
@@ -16,9 +16,9 @@ public:
             }
         }
         //for checking col
-        for(int j=0; j<n; j++){
+        for(int j=0; j<9; j++){
             unordered_set<char>seen;
-            for(int i=0; i<n;i++){
+            for(int i=0; i<9;i++){
                 char val =board[i][j];
                 if(val!='.'){
                     if(seen.count(val)){
