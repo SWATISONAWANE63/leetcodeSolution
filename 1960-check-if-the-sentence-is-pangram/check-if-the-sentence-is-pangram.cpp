@@ -1,14 +1,14 @@
 class Solution {
 public:
     bool checkIfPangram(string sentence) {
-        unordered_map<char, int>fre;
+        vector<char>arr(26,0);
         for(char ch:sentence){
-            fre[ch]++;
+            int index=ch-'a';
+            arr[index]++;
         }
-        for(char ch='a'; ch<='z';ch++){
-            if(fre[ch]==0)return false;
-          
-        }    
+    for(int count :arr){
+        if(count==0)return false;
+    }
     return true;
-    } 
+    }
 };
