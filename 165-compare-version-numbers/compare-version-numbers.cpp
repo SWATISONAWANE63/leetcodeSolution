@@ -2,13 +2,13 @@ class Solution {
 public:
     int compareVersion(string version1, string version2) {
         vector<int>v1,v2;
-        stringstream ss1(version1);
+        stringstream he1(version1);
         string num;
-        while(getline(ss1,num,'.')){
+        while(getline(he1,num,'.')){
             v1.push_back(stoi(num));
         }
-        stringstream ss2(version2);
-        while(getline(ss2,num,'.')){
+        stringstream he2(version2);
+        while(getline(he2,num,'.')){
             v2.push_back(stoi(num));
         }
         int n=max(v1.size(),v2.size());
