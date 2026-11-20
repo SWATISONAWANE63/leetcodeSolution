@@ -24,4 +24,16 @@ this repository create for leetcode questions
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2243-calculate-digit-sum-of-a-string](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3041-maximize-consecutive-elements-in-an-array-after-modification/) | Hard |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3041-maximize-consecutive-elements-in-an-array-after-modification/) | Hard |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3041-maximize-consecutive-elements-in-an-array-after-modification/) | Hard |
 <!---LeetCode Topics End-->
