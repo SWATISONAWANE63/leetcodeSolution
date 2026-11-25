@@ -28,6 +28,7 @@ this repository create for leetcode questions
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3041-maximize-consecutive-elements-in-an-array-after-modification/) | Hard |
+| [3934-smallest-unique-subarray](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3934-smallest-unique-subarray/) | Hard |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -36,4 +37,24 @@ this repository create for leetcode questions
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3041-maximize-consecutive-elements-in-an-array-after-modification/) | Hard |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Rolling Hash
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Suffix Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Hash Function
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3934-smallest-unique-subarray/) | Hard |
 <!---LeetCode Topics End-->
