@@ -24,6 +24,7 @@ this repository create for leetcode questions
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2243-calculate-digit-sum-of-a-string](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
+| [3360-stone-removal-game](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3360-stone-removal-game/) | Easy |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -57,4 +58,8 @@ this repository create for leetcode questions
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3934-smallest-unique-subarray](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3360-stone-removal-game](https://github.com/SWATISONAWANE63/leetcodeSolution/tree/main/3360-stone-removal-game/) | Easy |
 <!---LeetCode Topics End-->
